@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     title: "명숯불갈비 | 자양동 돼지갈비 & 갓 지은 가마솥밥 맛집",
     description:
       "광진구 자양동 명숯불갈비. 잡내 없는 돼지갈비와 주문 즉시 짓는 가마솥밥, 정성 가득한 한식 식사.",
+    url: "https://myeongribs.kr",
+    siteName: "명숯불갈비",
     images: [
       {
         url: "/images/명숯불갈비 메인.jpeg",
@@ -26,8 +28,10 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
+  "@type": "LocalBusiness",
+  "additionalType": "https://schema.org/Restaurant",
   name: "명숯불갈비",
+  description: "광진구 자양동 명숯불갈비. 잡내 없는 돼지갈비와 주문 즉시 짓는 가마솥밥, 정성 가득한 한식 식사.",
   image: "/images/명숯불갈비 메인.jpeg",
   url: "https://myeongribs.kr",
   telephone: "0507-1359-6271",
@@ -38,6 +42,11 @@ const jsonLd = {
     addressRegion: "서울특별시",
     postalCode: "05027",
     addressCountry: "KR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 37.5375,
+    longitude: 127.0675,
   },
   openingHoursSpecification: [
     {
@@ -57,6 +66,8 @@ const jsonLd = {
   ],
   servesCuisine: "Korean Cuisine",
   priceRange: "₩₩",
+  paymentAccepted: ["Cash", "Credit Card"],
+  currenciesAccepted: "KRW",
   hasMenu: {
     "@type": "Menu",
     hasMenuSection: [
