@@ -45,7 +45,7 @@ const CATEGORIES: Category[] = [
       { name: "해물순두부", price: 10000, image: "/images/해물순두부.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "돌솥비빔밥", price: 10000, image: "/images/돌솥비빔밥.jpg" },
       { name: "김치찌개 1인분", price: 10000, image: "/images/김치찌개1인분.jpg", includeSotbab: true, badge: "+솥밥" },
-      { name: "뚝배기불고기", price: 13000, image: "/images/돼지갈비 1인분 200g.jpg", includeSotbab: true, badge: "+솥밥" },
+      { name: "뚝배기불고기", price: 13000, image: "/images/뚝배기 불고기.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "오징어볶음 1인분", price: 10000, image: "/images/오징어볶음.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "갈치조림", price: 11000, image: "/images/갈치조림.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "고등어구이", price: 12000, image: "/images/고등어구이.jpg", includeSotbab: true, badge: "+솥밥" },
