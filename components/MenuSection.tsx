@@ -80,7 +80,7 @@ const CATEGORIES: Category[] = [
     emoji: "🍺",
     items: [
       { name: "소주", price: "2,000원 🎉 할인가", image: "/images/소주.jpg", badge: "EVENT" },
-      { name: "맥주", price: "3,500원 🎉 할인가", image: "/images/맥주.jpg", badge: "EVENT" },
+      { name: "맥주", price: "2,000원 🎉 할인가", image: "/images/맥주.jpg", badge: "EVENT" },
       { name: "막걸리", price: "4,000원", image: "/images/막걸리.jpg" },
       { name: "청하", price: "6,000원", image: "/images/청하.jpg" },
       { name: "음료", price: "2,000원", image: "/images/음료.jpg" },
@@ -225,7 +225,7 @@ export default function MenuSection() {
               🎉 감사 이벤트 진행 중
             </p>
             <p className="text-gray-600 mt-1 text-sm">
-              소주 <strong>2,000원</strong> · 맥주 <strong>3,500원</strong>으로 파격 할인!
+              소주 <strong>2,000원</strong> · 맥주 <strong>2,000원</strong>으로 파격 할인!
             </p>
           </motion.div>
         )}

@@ -18,7 +18,7 @@ export default function TopBanner() {
           <span className="opacity-80 mr-2">|</span>
           <span className="font-bold text-red-300">소주 2,000원</span>
           <span className="mx-1.5 opacity-60">·</span>
-          <span className="font-bold text-red-300">맥주 3,500원</span>
+          <span className="font-bold text-red-300">맥주 2,000원</span>
           <span className="ml-2 opacity-80 text-xs sm:text-sm">파격 할인 진행 중!</span>
         </p>
         <button
