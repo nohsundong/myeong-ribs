@@ -1,0 +1,24 @@
+{
+  "name": "명숯불갈비",
+  "short_name": "명숯불갈비",
+  "description": "광진구 자양동 명숯불갈비 - 돼지갈비와 가마솥밥 맛집",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff7e0",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "/images/명숯불갈비 메인.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/명숯불갈비 메인.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

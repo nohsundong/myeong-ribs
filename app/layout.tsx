@@ -114,12 +114,22 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
           rel="stylesheet"
         />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/images/명숯불갈비 메인.jpeg" />
+        <meta name="theme-color" content="#f59e0b" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-white text-gray-900 antialiased">{children}</body>
+      <body className="bg-white text-gray-900 antialiased">
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if (typeof window !== 'undefined' && 'serviceWorker' in navigator) { window.addEventListener('load', function() { navigator.serviceWorker.register('/sw.js').catch(function(error) { console.error('Service Worker registration failed:', error); }); }); }`,
+          }}
+        />
+      </body>
     </html>
   );
 }
