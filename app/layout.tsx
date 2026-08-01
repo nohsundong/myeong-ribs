@@ -61,7 +61,7 @@ const jsonLd = {
         "Sunday",
       ],
       opens: "09:30",
-      closes: "23:00",
+      closes: "01:00",
     },
   ],
   servesCuisine: "Korean Cuisine",
@@ -77,13 +77,13 @@ const jsonLd = {
         hasMenuItem: [
           {
             "@type": "MenuItem",
-            name: "돼지갈비 700g",
-            offers: { "@type": "Offer", price: "36000", priceCurrency: "KRW" },
+            name: "국내산 수제갈비 900g",
+            offers: { "@type": "Offer", price: "40000", priceCurrency: "KRW" },
           },
           {
             "@type": "MenuItem",
-            name: "소갈비살 500g",
-            offers: { "@type": "Offer", price: "42000", priceCurrency: "KRW" },
+            name: "미국산 등심 500g",
+            offers: { "@type": "Offer", price: "29000", priceCurrency: "KRW" },
           },
         ],
       },

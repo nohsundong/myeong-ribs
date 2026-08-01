@@ -53,8 +53,7 @@ export default function Footer() {
               <div>
                 <p className="text-sm font-medium">영업시간</p>
                 <p className="text-white/65 text-sm mt-0.5">
-                  09:30 – 23:00
-                  <span className="text-white/40 ml-2 text-xs">(마감주문(L.O) 22:00)</span>
+                  매일 09:30 – 다음 날 01:00
                 </p>
               </div>
             </div>

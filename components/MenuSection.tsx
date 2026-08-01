@@ -27,10 +27,10 @@ const CATEGORIES: Category[] = [
     emoji: "🥩",
     note: "고기메뉴에는 솥밥이 미포함입니다. 추가 주문해주세요.",
     items: [
-      { name: "돼지갈비 700g", price: 36000, image: "/images/돼지갈비 700g.jpg" },
-      { name: "돼지갈비 1인분 200g", price: 15000, image: "/images/돼지갈비 1인분 200g.jpg" },
-      { name: "생오겹살 1인분 180g", price: 13000, image: "/images/생오겹살 1인분 180g.jpg" },
-      { name: "소갈비살(양념 가능) 500g", price: 42000, image: "/images/소갈비살(양념 가능) 500g.jpg" },
+      { name: "국내산 수제갈비 900g", price: 40000, image: "/images/돼지갈비 700g.jpg" },
+      { name: "국내산 수제갈비 1인분 200g", price: 15000, image: "/images/돼지갈비 1인분 200g.jpg" },
+      { name: "국내산 생오겹살 1인분 180g", price: 13000, image: "/images/생오겹살 1인분 180g.jpg" },
+      { name: "미국산 등심 500g", price: 29000, image: "/images/등심.jpg" },
     ],
   },
   {
@@ -39,20 +39,18 @@ const CATEGORIES: Category[] = [
     emoji: "🍲",
     note: "식사메뉴에는 솥밥이 포함되어 있습니다.",
     items: [
-      { name: "닭도리탕", price: 30000, image: "/images/닭도리탕.jpg", note: "솥밥 별도" },
       { name: "스지도가니탕", price: 15000, image: "/images/스지도가니탕.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "한우우거지탕", price: 11000, image: "/images/한우 우거지탕.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "해물순두부", price: 10000, image: "/images/해물순두부.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "돌솥비빔밥", price: 10000, image: "/images/돌솥비빔밥.jpg" },
       { name: "김치찌개 1인분", price: 10000, image: "/images/김치찌개1인분.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "뚝배기불고기", price: 13000, image: "/images/뚝배기 불고기.jpg", includeSotbab: true, badge: "+솥밥" },
-      { name: "오징어볶음 1인분", price: 10000, image: "/images/오징어볶음.jpg", includeSotbab: true, badge: "+솥밥" },
+      { name: "오징어볶음 1인분", price: 11000, image: "/images/오징어볶음.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "갈치조림", price: 11000, image: "/images/갈치조림.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "고등어구이", price: 12000, image: "/images/고등어구이.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "고등어조림", price: 12000, image: "/images/고등어조림.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "제육볶음 1인분", price: 12000, image: "/images/제육볶음 1인분.jpg", includeSotbab: true, badge: "+솥밥" },
       { name: "코다리조림", price: 12000, image: "/images/코다리 조림.jpg", includeSotbab: true, badge: "+솥밥" },
-      { name: "백반", price: 9000, image: "/images/백반.jpg", badge: "+공기밥" },
     ],
   },
   {
@@ -70,8 +68,8 @@ const CATEGORIES: Category[] = [
     emoji: "🍜",
     note: "면류에는 솥밥이 미포함입니다.",
     items: [
-      { name: "비빔국수", price: 9000, image: "/images/비빔국수.jpg" },
-      { name: "해물칼국수", price: 10000, image: "/images/해물칼국수.jpg" },
+      { name: "냉면", price: 8000, image: "/images/물냉면.jpg" },
+      { name: "국내산 콩국수(계절메뉴 5~8월)", price: 10000, image: "/images/콩국수.jpg" },
     ],
   },
   {
@@ -80,7 +78,7 @@ const CATEGORIES: Category[] = [
     emoji: "🍺",
     items: [
       { name: "소주", price: "2,000원 🎉 할인가", image: "/images/소주.jpg", badge: "EVENT" },
-      { name: "맥주", price: "2,000원 🎉 할인가", image: "/images/맥주.jpg", badge: "EVENT" },
+      { name: "맥주", price: "3,500원", image: "/images/맥주.jpg", badge: "EVENT" },
       { name: "막걸리", price: "4,000원", image: "/images/막걸리.jpg" },
       { name: "청하", price: "6,000원", image: "/images/청하.jpg" },
       { name: "음료", price: "2,000원", image: "/images/음료.jpg" },
@@ -225,7 +223,7 @@ export default function MenuSection() {
               🎉 감사 이벤트 진행 중
             </p>
             <p className="text-gray-600 mt-1 text-sm">
-              소주 <strong>2,000원</strong> · 맥주 <strong>2,000원</strong>으로 파격 할인!
+              소주 <strong>2,000원</strong> · 맥주 <strong>3,500원</strong>으로 파격 할인!
             </p>
           </motion.div>
         )}
