@@ -30,7 +30,8 @@ const CATEGORIES: Category[] = [
       { name: "국내산 수제갈비 900g", price: 40000, image: "/images/돼지갈비 700g.jpg" },
       { name: "국내산 수제갈비 1인분 200g", price: 15000, image: "/images/돼지갈비 1인분 200g.jpg" },
       { name: "국내산 생오겹살 1인분 180g", price: 13000, image: "/images/생오겹살 1인분 180g.jpg" },
-      { name: "미국산 등심 500g", price: 29000, image: "/images/등심.jpg" },
+      { name: "국내산 생삼겹살 180g", price: 10000, image: "/images/생삼겹살.jpg" },
+      { name: "(한우)삼각살·보섭살 500g", price: 29000, image: "/images/삼각살_보섭살.jpg" },
     ],
   },
   {
@@ -68,7 +69,8 @@ const CATEGORIES: Category[] = [
     emoji: "🍜",
     note: "면류에는 솥밥이 미포함입니다.",
     items: [
-      { name: "냉면", price: 8000, image: "/images/물냉면.jpg" },
+      { name: "멸치국수+불백", price: 8000, image: "/images/멸치국수+불백.jpg" },
+      { name: "냉면", price: 8000, image: "/images/냉면.jpg" },
       { name: "국내산 콩국수(계절메뉴 5~8월)", price: 10000, image: "/images/콩국수.jpg" },
     ],
   },

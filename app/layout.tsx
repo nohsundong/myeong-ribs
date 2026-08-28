@@ -82,7 +82,12 @@ const jsonLd = {
           },
           {
             "@type": "MenuItem",
-            name: "미국산 등심 500g",
+            name: "국내산 생삼겹살 180g",
+            offers: { "@type": "Offer", price: "10000", priceCurrency: "KRW" },
+          },
+          {
+            "@type": "MenuItem",
+            name: "(한우)삼각살·보섭살 500g",
             offers: { "@type": "Offer", price: "29000", priceCurrency: "KRW" },
           },
         ],
