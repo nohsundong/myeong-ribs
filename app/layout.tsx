@@ -61,7 +61,7 @@ const jsonLd = {
         "Sunday",
       ],
       opens: "09:30",
-      closes: "01:00",
+      closes: "02:00",
     },
   ],
   servesCuisine: "Korean Cuisine",
