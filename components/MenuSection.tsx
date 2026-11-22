@@ -6,7 +6,7 @@ import Image from "next/image";
 type MenuItem = {
   name: string;
   price: number | string;
-  image: string;
+  image?: string; // 이미지가 없으면 "이미지 준비중" 자리표시가 나옵니다
   note?: string;
   includeSotbab?: boolean;
   badge?: string;
@@ -32,6 +32,9 @@ const CATEGORIES: Category[] = [
       { name: "국내산 생오겹살 1인분 180g", price: 13000, image: "/images/생오겹살 1인분 180g.jpg" },
       { name: "국내산 생삼겹살 180g", price: 10000, image: "/images/생삼겹살.jpg" },
       { name: "(한우)삼각살·보섭살 500g", price: 29000, image: "/images/삼각살_보섭살.jpg" },
+      { name: "(국내산)생목살 150g", price: 10000 },
+      { name: "(국내산)갈매기살 150g", price: 10000 },
+      { name: "(칠레산)대패삼겹 180g", price: 9000 },
     ],
   },
   {
@@ -71,7 +74,7 @@ const CATEGORIES: Category[] = [
     items: [
       { name: "멸치국수+불백", price: 8000, image: "/images/멸치국수+불백.jpg" },
       { name: "냉면", price: 8000, image: "/images/냉면.jpg" },
-      { name: "국내산 콩국수(계절메뉴 5~8월)", price: 10000, image: "/images/콩국수.jpg" },
+      { name: "국내산 콩국수(계절메뉴 5~8월)", price: 9000, image: "/images/콩국수.jpg" },
     ],
   },
   {
@@ -166,13 +169,20 @@ export default function MenuSection() {
             >
               {/* Image */}
               <div className="relative aspect-square bg-gray-50">
-                <Image
-                  src={item.image}
-                  alt={`자양동 명숯불갈비 ${item.name}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
-                />
+                {item.image ? (
+                  <Image
+                    src={item.image}
+                    alt={`자양동 명숯불갈비 ${item.name}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 text-gray-300">
+                    <span className="text-4xl">{activeCategory.emoji}</span>
+                    <span className="text-xs font-medium text-gray-400">이미지 준비중</span>
+                  </div>
+                )}
                 {/* Badges */}
                 <div className="absolute top-2 left-2 flex flex-col gap-1">
                   {item.badge === "EVENT" && (
